@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.419 s <<< FAILURE! - in TestSuite
+TestRunner.runScenario["User should be able to login with valid email and password", "Login Feature"](1)  Time elapsed: 0.033 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "driverType" is null
+	at base.Config.setupBrowser(Config.java:15)
+	at stepDef.Hook.beforeEachTest(Hook.java:19)
+
+TestRunner.runScenario["Existing user should be able to login", "Login Feature"](2)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "driverType" is null
+	at base.Config.setupBrowser(Config.java:15)
+	at stepDef.Hook.beforeEachTest(Hook.java:19)
+
+TestRunner.runScenario["User should not be able to login with valid email and invalid password", "Login Feature"](3)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "driverType" is null
+	at base.Config.setupBrowser(Config.java:15)
+	at stepDef.Hook.beforeEachTest(Hook.java:19)
+
+TestRunner.runScenario["User should not be able to login with invalid email and valid password", "Login Feature"](4)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "driverType" is null
+	at base.Config.setupBrowser(Config.java:15)
+	at stepDef.Hook.beforeEachTest(Hook.java:19)
+
+TestRunner.runScenario["User should not be able to login with invalid email and password", "Login Feature"](5)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "driverType" is null
+	at base.Config.setupBrowser(Config.java:15)
+	at stepDef.Hook.beforeEachTest(Hook.java:19)
+
