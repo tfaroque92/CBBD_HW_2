@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 20 20:50:31 EDT 2023</td>
+<td>Started on:</td><td>Mon Mar 20 21:11:49 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (227 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17774 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,64 +76,74 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should not be able to login with invalid email and valid password", "Login Feature"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace783051420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace783051420'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should be able to create a brand new email with unique email address", "Signup Feature"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enter their gender as &quot;female&quot;&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given(&quot;user enter their gender as {string}&quot;)
+public void user_enter_their_gender_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace808601254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace808601254'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user enter their gender as &quot;female&quot;&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given(&quot;user enter their gender as {string}&quot;)
+public void user_enter_their_gender_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
 </pre></div></td>
-<td>0</td>
+<td>7</td>
 <td>TestRunner@3e3047e6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should be able to login with valid email and password", "Login Feature"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1953678369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1953678369'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div></td>
-<td>0</td>
-<td>TestRunner@3e3047e6</td></tr>
-<tr>
-<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Existing user should be able to login", "Login Feature"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace858114177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace858114177'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div></td>
-<td>0</td>
-<td>TestRunner@3e3047e6</td></tr>
-<tr>
-<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should not be able to login with valid email and invalid password", "Login Feature"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace528490421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace528490421'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div></td>
-<td>0</td>
-<td>TestRunner@3e3047e6</td></tr>
-<tr>
-<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should not be able to login with invalid email and password", "Login Feature"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace739592219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace739592219'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;driverType&quot; is null
-	at base.Config.setupBrowser(Config.java:15)
-	at stepDef.Hook.beforeEachTest(Hook.java:19)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>10</td>
 <td>TestRunner@3e3047e6</td></tr>
 </table><p>
 </body>

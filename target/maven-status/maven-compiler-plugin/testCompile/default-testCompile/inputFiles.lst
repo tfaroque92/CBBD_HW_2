@@ -1,6 +1,8 @@
 /Users/tam/Desktop/CBBDD/CBBD_HW_2/CBBD_HW_2/src/test/java/TestRunner.java
 /Users/tam/Desktop/CBBDD/CBBD_HW_2/CBBD_HW_2/src/test/java/base/Config.java
 /Users/tam/Desktop/CBBDD/CBBD_HW_2/CBBD_HW_2/src/test/java/pageObject/login_page.java
+/Users/tam/Desktop/CBBDD/CBBD_HW_2/CBBD_HW_2/src/test/java/pageObject/signup_page.java
 /Users/tam/Desktop/CBBDD/CBBD_HW_2/CBBD_HW_2/src/test/java/stepDef/Hook.java
+/Users/tam/Desktop/CBBDD/CBBD_HW_2/CBBD_HW_2/src/test/java/stepDef/SignupSteps.java
 /Users/tam/Desktop/CBBDD/CBBD_HW_2/CBBD_HW_2/src/test/java/base/TestData.java
 /Users/tam/Desktop/CBBDD/CBBD_HW_2/CBBD_HW_2/src/test/java/stepDef/LoginSteps.java

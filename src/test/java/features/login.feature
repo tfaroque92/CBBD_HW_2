@@ -13,7 +13,7 @@ Feature: Login Feature
 
   Scenario: Existing user should be able to login
     And login
-  @test
+
   Scenario: User should not be able to login with valid email and invalid password
     And user enter valid email address
     And user enter invalid password
